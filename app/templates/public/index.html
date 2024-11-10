@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Garasho LM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/css/mdb.lite.min.css"
+        integrity="sha512-Eu5EEZpsrO6niYlnhT+ITom/YVGoIZGEsbAvZ+gUJsO3Xaq9+hX4vZnbecMn/Cq5KOdmNOdehu/U80111W9xsA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/css/mdb.min.css"
+        integrity="sha512-hj9rznBPdFg9A4fACbJcp4ttzdinMDtPrtZ3gBD11DiY3O1xJfn0r1U5so/J0zwfGOzq9teIaH5rFmjFAFw8SA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.0.0/mdb.min.css" rel="stylesheet" />
+</head>
+
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary" style="position: sticky; top: 0; z-index: 1020;">
+        <!-- Container wrapper -->
+        <div class="container">
+            <!-- Navbar brand -->
+            <!-- <a class="navbar-brand me-2" href="https://mdbgo.com/">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+          height="16"
+          alt="MDB Logo"
+          loading="lazy"
+          style="margin-top: -1px;"
+        />
+      </a> -->
+
+            <!-- Toggle button -->
+            <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarButtonsExample"
+                aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <h4>GarashoLM</h4>
+                    </li>
+                </ul>
+                <!-- Left links -->
+
+                <div class="d-flex align-items-center justify-content-between">
+                    <a class="nav-link active" aria-current="page" href="#">Ifafaallo</a>
+                    <a class="nav-link ms-4" href="#">Contact</a>
+                </div>
+
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar end-->
+
+    <!-- Section hero start-->
+    <section id="hero" class="hero">
+        <div class="container-lg py-5">
+            <div class="row align-items-center justify-content-center text-center mt-5">
+                <div class="col-md-6">
+                    <h1 style="font-size: 48.1px;" class="mb-6">U feker si <span
+                            style="color:aqua">caqliyeysan</span>,ma ahan si adag</h1>
+                    <div class="lead mb-6">The ultimate tool for understanding the information that matters most to you,
+                        built with Gemini 1.5</div>
+                    <button class="btn btn-dark btn-lg mb-6" style="border-radius: 15px;">Try GrashoLM</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section hero end-->
+
+    <!-- Section Your personalised AI research assistant start here -->
+    <section id="personalized" class="personalized" style="overflow-x: hidden;">
+       <div class="container-lg ">
+        <div class="text-center">
+            <h2 class="display-6">Your personalised AI research assistant</h2>
+        </div>
+        <div class="row align-items-center justify-content-center g-5" style="height: 400px;">
+            <div class="col-12 col-md-6 col-lg-4 text-center text-md-start mb-4 mb-md-0">
+                <i class="fa-regular fa-user"></i>
+                <h4 style="font-size: 1rem;">Upload your sources</h4>
+                <div style="font-size: 0.875rem;">Upload PDFs, websites, YouTube videos, audio files, Google Docs or Google Slides, and
+                    NotebookLM will summarise them and make interesting connections between topics, all powered by
+                    Gemini 1.5's multimodal understanding capabilities.</div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-8">
+                <div style="width: 550px; height: 300px; border-radius: 20px; overflow: hidden;">
+                    <video autoplay loop muted style="width: 550px; height: 300px; object-fit: cover;">
+                        <source src="{{ url_for('static', filename='images/video1.mp4') }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+            </div>
+        </div>
+       </div>
+    </section>
+    <!-- Section Your personalised AI research assistant end here -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js"
+        integrity="sha512-XFd1m0eHgU1F05yOmuzEklFHtiacLVbtdBufAyZwFR0zfcq7vc6iJuxerGPyVFOXlPGgM8Uhem9gwzMI8SJ5uw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- MDB -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.0.0/mdb.umd.min.js"></script>
+
+
+</body>
+
+</html>
